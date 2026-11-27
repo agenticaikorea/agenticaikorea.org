@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="only light">
+<title>Agentic AI Korea</title>
+<meta name="description" content="A community in Korea that learns open source for AI agents together, in Korean, and contributes to the projects. Most of our work is on projects hosted by the Agentic AI Foundation (AAIF).">
+<link rel="alternate" hreflang="ko" href="https://agenticaikorea.org/">
+<link rel="alternate" hreflang="en" href="https://agenticaikorea.org/en/">
+<link rel="alternate" hreflang="x-default" href="https://agenticaikorea.org/">
+<link rel="canonical" href="https://agenticaikorea.org/en/">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://agenticaikorea.org/en/">
+<meta property="og:title" content="Agentic AI Korea">
+<meta property="og:description" content="A community in Korea that learns open source for AI agents together, in Korean, and contributes to the projects. Most of our work is on projects hosted by the Agentic AI Foundation (AAIF).">
+<meta property="og:image" content="https://agenticaikorea.org/assets/og-image.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+@font-face { font-family: "Instrument Sans"; src: url("/assets/fonts/InstrumentSans-Medium.ttf") format("truetype"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Instrument Sans"; src: url("/assets/fonts/InstrumentSans-SemiBold.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+:root {
+  color-scheme: only light;
+  --ink: #000000; --paper: #ffffff; --orange: #FF702D;
+  --ink-2: #3a3a3a; --ink-3: #6b6b6b; --line: #e3e3e3; --paper-2: #f6f6f6;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font-family: "Instrument Sans", "Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  font-size: 16px; line-height: 1.7; word-break: keep-all; overflow-wrap: break-word;
+}
+a { color: inherit; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+header.hero { background: var(--ink); color: var(--paper); padding: 56px 0 48px; }
+.hero .wrap { display: flex; gap: 32px; align-items: center; }
+.hero img { width: 144px; height: 144px; flex: none; }
+.hero h1 { margin: 0 0 8px; font-size: 40px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; }
+.hero p { margin: 0; font-size: 18px; color: #d9d9d9; }
+section { padding: 48px 0 8px; }
+h2 { margin: 0 0 12px; font-size: 26px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.25; }
+.lead { margin: 0 0 20px; color: var(--ink-2); }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; background: var(--paper-2); }
+td:first-child { white-space: nowrap; font-weight: 600; }
+.proj { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.proj img { width: 28px; height: 28px; flex: none; border-radius: 6px; }
+.proj span { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }
+.proj:hover span { text-decoration-color: var(--ink); }
+.coming { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.coming li { border: 1px solid var(--line); padding: 16px 20px; }
+.coming strong { display: block; font-weight: 600; }
+.coming span { display: block; color: var(--ink-2); margin-top: 4px; }
+.promo-banner { display: block; }
+.promo-banner img { display: block; width: 100%; height: auto; }
+.note { margin: 8px 0 0; font-size: 13px; color: var(--ink-3); }
+.mcpa { border: 1px solid var(--line); padding: 20px 24px; margin-bottom: 16px; }
+.mcpa h3 { margin: 0 0 8px; font-size: 18px; font-weight: 600; }
+.mcpa p { margin: 0 0 8px; color: var(--ink-2); }
+.mcpa ul { margin: 0 0 12px; padding-left: 20px; color: var(--ink-2); }
+.mcpa a.more { font-weight: 600; }
+footer { margin-top: 56px; border-top: 1px solid var(--line); padding: 24px 0 40px; font-size: 14px; color: var(--ink-3); }
+footer p { margin: 0 0 4px; }
+.dot { color: var(--orange); }
+.hero .wrap { position: relative; }
+.lang { position: absolute; top: -36px; right: 24px; font-size: 14px; color: #bdbdbd; }
+.lang a { color: #ffffff; text-decoration: none; }
+.lang a:hover { text-decoration: underline; }
+.lang strong { color: #ffffff; font-weight: 600; }
+@media (max-width: 640px) {
+  .hero .wrap { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .hero img { width: 112px; height: 112px; }
+  .hero h1 { font-size: 32px; }
+  td:first-child { white-space: normal; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav class="lang"><a href="/" hreflang="ko" lang="ko">한국어</a> | <strong>English</strong></nav>
+    <img src="/assets/logo-512.png" alt="Agentic AI Korea logo" width="144" height="144">
+    <div>
+      <h1>Agentic AI Korea</h1>
+      <p>A community in Korea that learns open source for AI agents together, in Korean, and contributes to the projects. Most of our work is on projects hosted by the Agentic AI Foundation (AAIF).</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>10 projects hosted by the Agentic AI Foundation (AAIF)</h2>
+      <p class="lead">The Agentic AI Foundation is a neutral, open foundation under the Linux Foundation that hosts open protocols and open source projects for agentic AI.
+      It launched in December 2025 and hosts 10 projects as of November 2026.</p>
+      <table>
+        <thead><tr><th>Project</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><a class="proj" href="https://modelcontextprotocol.io/docs/getting-started/intro"><img src="/assets/projects/mcp.png" alt="" width="28" height="28" loading="lazy"><span>MCP (Model Context Protocol)</span></a></td><td>A protocol for connecting LLM applications to external data sources and tools</td></tr>
+          <tr><td><a class="proj" href="https://goose-docs.ai"><img src="/assets/projects/goose.png" alt="" width="28" height="28" loading="lazy"><span>goose</span></a></td><td>An open source, extensible AI agent that works with any LLM</td></tr>
+          <tr><td><a class="proj" href="https://agents.md/"><img src="/assets/projects/agents-md.png" alt="" width="28" height="28" loading="lazy"><span>AGENTS.md</span></a></td><td>A simple, open format for guiding coding agents</td></tr>
+          <tr><td><a class="proj" href="https://agentgateway.dev"><img src="/assets/projects/agentgateway.png" alt="" width="28" height="28" loading="lazy"><span>agentgateway</span></a></td><td>Secure, scalable connections between AI agents, models, tools, and APIs</td></tr>
+          <tr><td><a class="proj" href="https://a2a-protocol.org/"><img src="/assets/projects/a2a.png" alt="" width="28" height="28" loading="lazy"><span>A2A (Agent2Agent)</span></a></td><td>An open protocol for AI agents to communicate, collaborate, and exchange information and tasks across platforms and frameworks</td></tr>
+          <tr><td><a class="proj" href="https://theagentrouter.ai/"><img src="/assets/projects/agent-router.png" alt="" width="28" height="28" loading="lazy"><span>Agent Router</span></a></td><td>An open source AI gateway built on Envoy that connects applications to models and MCP tools</td></tr>
+          <tr><td><a class="proj" href="https://agentskills.io"><img src="/assets/projects/agent-skills.png" alt="" width="28" height="28" loading="lazy"><span>Agent Skills</span></a></td><td>An open format for reusable agent expertise</td></tr>
+          <tr><td><a class="proj" href="https://www.openresponses.org/"><img src="/assets/projects/open-responses.png" alt="" width="28" height="28" loading="lazy"><span>Open Responses</span></a></td><td>A shared LLM API format for agents across providers</td></tr>
+          <tr><td><a class="proj" href="https://huggingface.co/docs/openenv/index"><img src="/assets/projects/openenv.png" alt="" width="28" height="28" loading="lazy"><span>OpenEnv</span></a></td><td>Open environments for training AI agents</td></tr>
+          <tr><td><a class="proj" href="https://open-sandbox.ai/"><img src="/assets/projects/opensandbox.png" alt="" width="28" height="28" loading="lazy"><span>OpenSandbox</span></a></td><td>A general purpose sandbox platform for AI applications</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Coming next</h2>
+      <p class="lead">The site has only this first page for now. We will add the following as we hold events.</p>
+      <ul class="coming">
+        <li><strong>Event recaps</strong><span>After each event, a recap page in Korean with the date, number of attendees, slides, and photos. This page will list each recap with a short English summary.</span></li>
+        <li><strong>Guide for new members</strong><span>How to join our events and how to start contributing to AAIF projects, in Korean.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="mcpa">
+        <h3>MCPA practice materials</h3>
+        <p>MCPA (Model Context Protocol Associate) is the first certification from the Agentic AI Foundation.
+        AAIF ambassador Hoon Jo compiled these practice materials as a personal project.</p>
+        <ul>
+          <li>8 mock exams, 480 questions in total (English questions with Korean translations and explanations)</li>
+          <li>A cheat sheet of terms in the MCP 2026-07-28 specification (Korean and English)</li>
+          <li>An exam overview with the weight of each domain (Korean)</li>
+          <li>A summary of changes in the 2026-07-28 specification (Korean)</li>
+        </ul>
+        <a class="more" href="https://github.com/sysnet4admin/lf-certifications">See all materials (github.com/sysnet4admin/lf-certifications)</a>
+        <p class="note">These are practice materials, not real exam questions, and they are not official Linux Foundation or AAIF materials.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Run by AAIF ambassadors <a href="https://www.linkedin.com/in/hoonjo/">Hoon Jo</a> and <a href="https://www.linkedin.com/in/9bow/">Junghwan Park</a></p>
+    <p>GitHub: <a href="https://github.com/agenticaikorea">github.com/agenticaikorea</a></p>
+    <p>Agentic AI Korea is not an official organization of the Agentic AI Foundation (AAIF) or the Linux Foundation.</p>
+  </div>
+</footer>
+</body>
+</html>
