@@ -45,6 +45,10 @@ table { width: 100%; border-collapse: collapse; font-size: 15px; }
 th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
 th { font-weight: 600; background: var(--paper-2); }
 td:first-child { white-space: nowrap; font-weight: 600; }
+.proj { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.proj img { width: 28px; height: 28px; flex: none; border-radius: 6px; }
+.proj span { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 4px; }
+.proj:hover span { text-decoration-color: var(--ink); }
 .coming { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .coming li { border: 1px solid var(--line); padding: 16px 20px; }
 .coming strong { display: block; font-weight: 600; }
@@ -88,16 +92,16 @@ footer p { margin: 0 0 4px; }
       <table>
         <thead><tr><th>프로젝트</th><th>설명</th></tr></thead>
         <tbody>
-          <tr><td>MCP (Model Context Protocol)</td><td>LLM 애플리케이션을 외부 데이터와 도구에 연결하는 프로토콜</td></tr>
-          <tr><td>goose</td><td>어떤 LLM과도 동작하고 기능을 확장할 수 있는 오픈소스 AI 에이전트</td></tr>
-          <tr><td>AGENTS.md</td><td>코딩 에이전트에게 프로젝트 작업 방법을 알려 주는 간단한 오픈 포맷</td></tr>
-          <tr><td>agentgateway</td><td>AI 에이전트, 모델, 도구 그리고 API 사이의 연결을 안전하게 처리하는 게이트웨이</td></tr>
-          <tr><td>A2A (Agent2Agent)</td><td>AI 에이전트끼리 통신하고 협업하도록 하는 오픈 프로토콜</td></tr>
-          <tr><td>Agent Router</td><td>애플리케이션을 모델과 MCP 도구에 연결하는 Envoy 기반 오픈소스 AI 게이트웨이</td></tr>
-          <tr><td>Agent Skills</td><td>에이전트가 재사용할 수 있는 전문 지식(스킬)을 담는 오픈 포맷</td></tr>
-          <tr><td>Open Responses</td><td>모델 제공자가 달라도 같은 방식으로 호출할 수 있는 에이전트용 LLM API 포맷</td></tr>
-          <tr><td>OpenEnv</td><td>AI 에이전트를 학습시키는 오픈소스 환경</td></tr>
-          <tr><td>OpenSandbox</td><td>AI 애플리케이션을 위한 범용 샌드박스 플랫폼</td></tr>
+          <tr><td><a class="proj" href="https://modelcontextprotocol.io/docs/getting-started/intro"><img src="/assets/projects/mcp.png" alt="" width="28" height="28" loading="lazy"><span>MCP (Model Context Protocol)</span></a></td><td>LLM 애플리케이션을 외부 데이터와 도구에 연결하는 프로토콜</td></tr>
+          <tr><td><a class="proj" href="https://goose-docs.ai"><img src="/assets/projects/goose.png" alt="" width="28" height="28" loading="lazy"><span>goose</span></a></td><td>어떤 LLM과도 동작하고 기능을 확장할 수 있는 오픈소스 AI 에이전트</td></tr>
+          <tr><td><a class="proj" href="https://agents.md/"><img src="/assets/projects/agents-md.png" alt="" width="28" height="28" loading="lazy"><span>AGENTS.md</span></a></td><td>코딩 에이전트에게 프로젝트 작업 방법을 알려 주는 간단한 오픈 포맷</td></tr>
+          <tr><td><a class="proj" href="https://agentgateway.dev"><img src="/assets/projects/agentgateway.png" alt="" width="28" height="28" loading="lazy"><span>agentgateway</span></a></td><td>AI 에이전트, 모델, 도구 그리고 API 사이의 연결을 안전하게 처리하는 게이트웨이</td></tr>
+          <tr><td><a class="proj" href="https://a2a-protocol.org/"><img src="/assets/projects/a2a.png" alt="" width="28" height="28" loading="lazy"><span>A2A (Agent2Agent)</span></a></td><td>AI 에이전트끼리 통신하고 협업하도록 하는 오픈 프로토콜</td></tr>
+          <tr><td><a class="proj" href="https://theagentrouter.ai/"><img src="/assets/projects/agent-router.png" alt="" width="28" height="28" loading="lazy"><span>Agent Router</span></a></td><td>애플리케이션을 모델과 MCP 도구에 연결하는 Envoy 기반 오픈소스 AI 게이트웨이</td></tr>
+          <tr><td><a class="proj" href="https://agentskills.io"><img src="/assets/projects/agent-skills.png" alt="" width="28" height="28" loading="lazy"><span>Agent Skills</span></a></td><td>에이전트가 재사용할 수 있는 전문 지식(스킬)을 담는 오픈 포맷</td></tr>
+          <tr><td><a class="proj" href="https://www.openresponses.org/"><img src="/assets/projects/open-responses.png" alt="" width="28" height="28" loading="lazy"><span>Open Responses</span></a></td><td>모델 제공자가 달라도 같은 방식으로 호출할 수 있는 에이전트용 LLM API 포맷</td></tr>
+          <tr><td><a class="proj" href="https://huggingface.co/docs/openenv/index"><img src="/assets/projects/openenv.png" alt="" width="28" height="28" loading="lazy"><span>OpenEnv</span></a></td><td>AI 에이전트를 학습시키는 오픈소스 환경</td></tr>
+          <tr><td><a class="proj" href="https://open-sandbox.ai/"><img src="/assets/projects/opensandbox.png" alt="" width="28" height="28" loading="lazy"><span>OpenSandbox</span></a></td><td>AI 애플리케이션을 위한 범용 샌드박스 플랫폼</td></tr>
         </tbody>
       </table>
     </div>
