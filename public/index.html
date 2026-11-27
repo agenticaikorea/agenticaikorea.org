@@ -69,6 +69,8 @@ td:first-child { white-space: nowrap; font-weight: 600; }
 .mcpa a.more { font-weight: 600; }
 footer { margin-top: 56px; border-top: 1px solid var(--line); padding: 24px 0 40px; font-size: 14px; color: var(--ink-3); }
 footer p { margin: 0 0 4px; }
+footer .wrap { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px 32px; flex-wrap: wrap; }
+footer .links { display: flex; gap: 20px; flex-wrap: wrap; margin: 0; }
 .dot { color: var(--orange); }
 .hero .wrap { position: relative; }
 .lang { position: absolute; top: -36px; right: 24px; font-size: 14px; color: #bdbdbd; }
@@ -152,8 +154,11 @@ footer p { margin: 0 0 4px; }
 
 <footer>
   <div class="wrap">
-    <p>운영: AAIF 앰버서더 <a href="https://www.linkedin.com/in/hoonjo/">조훈</a>, <a href="https://www.linkedin.com/in/9bow/">박정환</a></p>
-    <p>GitHub: <a href="https://github.com/agenticaikorea">github.com/agenticaikorea</a></p>
+    <div>
+      <p>© 2026 Agentic AI Korea</p>
+      <p>운영: AAIF 앰버서더 <a href="https://www.linkedin.com/in/hoonjo/">조훈</a>, <a href="https://www.linkedin.com/in/9bow/">박정환</a></p>
+    </div>
+    <p class="links"><a href="https://github.com/agenticaikorea">GitHub</a> <a href="mailto:contact@agenticaikorea.org">contact@agenticaikorea.org</a></p>
   </div>
 </footer>
 </body>
