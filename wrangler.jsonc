@@ -5,6 +5,10 @@
     "directory": "./public"
   },
   "routes": [
-    { "pattern": "agenticaikorea.org", "custom_domain": true }
-  ]
+    {
+      "pattern": "agenticaikorea.org",
+      "custom_domain": true
+    }
+  ],
+  "previews": {}
 }
