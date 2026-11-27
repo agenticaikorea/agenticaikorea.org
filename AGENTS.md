@@ -10,6 +10,10 @@ Agentic AI Korea 커뮤니티 웹사이트 저장소다. 이 저장소는 공개
   브랜치에 푸시될 때마다 자동으로 배포한다. Worker 설정은 `wrangler.jsonc`이고 Worker 이름 `agenticaikorea-org`는
   Cloudflare 쪽 이름과 같아야 한다. 사용자 도메인 `agenticaikorea.org`도 이 파일의 `routes`로 지정한다.
   이 파일에 계정 값과 토큰을 넣지 않는다. DNS 레코드, 메일 같은 Cloudflare 계정 쪽 설정은 이 저장소에서 하지 않는다.
+- 페이지는 `public/` 아래에서 만들고 고쳐 `main`에 push하면 된다. `wrangler.jsonc`의 `name`, `routes`, 바인딩(KV, D1, R2 등)을
+  바꾸려면 push 전에 Cloudflare 계정을 관리하는 운영자(조훈)에게 먼저 알린다. 빌드에 사용하는 토큰은 이 도메인과 Worker 배포에
+  필요한 권한만 가지고 있어서 바인딩을 더하면 권한이 없어 빌드가 실패한다. 빌드가 실패해도 공개 사이트는 이전 버전이 유지된다.
+  `compatibility_date`처럼 Cloudflare 자원에 영향이 없는 값은 알리지 않아도 된다.
 - 로고는 `public/assets/`에 둔다. 로고 원본과 생성 스크립트는 운영진의 비공개 저장소에 있다.
 
 ## 지킬 것
