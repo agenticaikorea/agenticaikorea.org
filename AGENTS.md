@@ -17,8 +17,9 @@ Agentic AI Korea 커뮤니티 웹사이트 저장소다. 이 저장소는 공개
 - 공개 전에 확인하려면 `main`이 아닌 브랜치에서 작업하고 `main`으로 PR을 연다. Workers Builds가 그 브랜치의 미리 보기를 만들고
   주소는 `<브랜치 이름>-agenticaikorea-org.<계정의 workers.dev 서브도메인>.workers.dev` 형태다. PR에 주소 댓글은 달리지 않는다.
   브랜치 이름은 소문자와 하이픈으로 짓는다. 미리 보기 주소는 아는 사람 누구나 열 수 있고 검색 엔진에는 노출되지 않는다.
-- `wrangler.jsonc`에 `preview_urls`나 `workers_dev`를 넣지 않는다. 넣으면 미리 보기 주소와 workers.dev 주소 설정이 바뀐다.
-  넣어야 하면 운영자에게 먼저 알린다.
+- `wrangler.jsonc`에는 `"workers_dev": false`와 `"preview_urls": true`를 적어 둔다. 적지 않으면 운영 배포 때 미리 보기 주소가
+  꺼진다. `workers_dev`는 공개 사이트와 같은 내용이 workers.dev 주소로 따로 열리지 않게 끈 값이다. 이 값들을 바꾸려면 운영자에게
+  먼저 알린다.
 - 로고는 `public/assets/`에 둔다. 로고 원본과 생성 스크립트는 운영진의 비공개 저장소에 있다.
 
 ## 지킬 것
